@@ -1,0 +1,105 @@
+Name: NAvMethods
+Type: FolderType
+Children:
+- Name: raSDK1_NavUsingTag
+  Id: g=0d12c6b970864351d7e7116814bc4e22
+  Supertype: Button
+  Description: {"LocaleId":"en-US","Text":"Navigate to faceplate using tag.  The instruction backing tag is linked to Ref_Tag, and the dialog box name is derived from data stored in the instruction backing tag."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Cfg_CloseCurrentDisplay
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Close current dialog box on open of new dialog box."}
+  - Name: Cfg_DisplayType
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"Type of display: Faceplate, Quick, Advanced."}
+    Value: "Faceplate"
+  - Name: Ref_Tag
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Description: {"LocaleId":"en-US","Text":"Instruction backing tag."}
+  - Name: raSDK1_NL_NavUsingTag
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: NavTag
+      Id: g=aa276da26838ae7424472b940df5045d
+  - Name: MouseClickEventHandler1
+    Type: EventHandler
+    Children:
+    - Name: ListenEventType
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+    - Name: MethodsToCall
+      Type: BaseObjectType
+      Children:
+      - Name: MethodContainer1
+        Type: BaseObjectType
+        Children:
+        - Name: ns=3;ObjectPointer
+          Type: NodePointer
+          DataType: NodeId
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../raSDK1_NL_NavUsingTag@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: ns=3;Method
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "NavTag"
+    - Name: EventArguments
+      Type: MouseClickEvent
+      Children:
+      - Name: EventId
+        Type: PropertyType
+        DataType: ByteString
+      - Name: EventType
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceNode
+        Type: PropertyType
+        DataType: NodeId
+      - Name: SourceName
+        Type: PropertyType
+        DataType: String
+      - Name: Time
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: ReceiveTime
+        Type: PropertyType
+        DataType: UtcTime
+      - Name: Message
+        Type: PropertyType
+        DataType: LocalizedText
+      - Name: Severity
+        Type: PropertyType
+        DataType: UInt16
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: Style
+    Type: BaseDataVariableType
+    DataType: String
+    ModellingRule: Optional
+    Value: "Navigation"

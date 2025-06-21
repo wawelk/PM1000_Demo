@@ -1,0 +1,4 @@
+Name: PowerDevice_v4R
+Type: FolderType
+Children:
+- File: _PrivateElements_/_PrivateElements_.yaml

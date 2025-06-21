@@ -1,0 +1,14 @@
+Name: TagImporter
+Type: MicroControllerTagImporter
+OwnerId: ns=2;g=42aca7b5fedbc636f31b6a06069f7f86
+Children:
+- Name: IgnoredPLCItems
+  Type: BaseDataVariableType
+  DataType: BaseDataType
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+- Name: IgnoredHMIItems
+  Type: BaseDataVariableType
+  DataType: NodeId
+  ValueRank: OneDimension
+  ArrayDimensions: [0]

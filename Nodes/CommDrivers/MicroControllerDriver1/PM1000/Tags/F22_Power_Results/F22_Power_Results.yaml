@@ -1,0 +1,35 @@
+Name: F22 Power Results
+Type: FolderType
+Children:
+- Name: Power Factor
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F22:3"
+- Name: Total kW
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F22:7"
+- Name: Total kVAR
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F22:11"
+- Name: Total kVA
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F22:15"

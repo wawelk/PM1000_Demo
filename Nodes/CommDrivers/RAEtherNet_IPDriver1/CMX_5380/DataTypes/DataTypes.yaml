@@ -1,0 +1,839 @@
+Name: DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: raC_UDT_EnergyElectricalObject
+  Id: g=529ca40c4f4eb789a100ffb9f6349b6b
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_EnergyElectricalObject",
+    "DataType": {
+     "IdType": 2,
+     "Id": "529ca40c4f4eb789a100ffb9f6349b6b",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "RealEnergyConsumedOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "RealEnergyGeneratedOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "RealEnergyNetOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "ReactiveEnergyConsumedOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "ReactiveEnergyGeneratedOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "ReactiveEnergyNetOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "ApparentEnergyOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "KiloampereHoursOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "LineFrequency",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CurrentL1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CurrentL2",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CurrentL3",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "AverageCurrent",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "CurrentPercentUnbalanced",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "VoltageL1N",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "VoltageL2N",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "VoltageL3N",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "VoltageAverageLN",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "VoltageL1L2",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "VoltageL2L3",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "VoltageL3L1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "VoltageAverageLL",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "VoltagePercentUnbalanced",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "RealPowerL1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "RealPowerL2",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "RealPowerL3",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "RealPowerTotal",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ReactivePowerL1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ReactivePowerL2",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ReactivePowerL3",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ReactivePowerTotal",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ApparentPowerL1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ApparentPowerL2",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ApparentPowerL3",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "ApparentPowerTotal",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "TruePowerFactorL1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "TruePowerFactorL2",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "TruePowerFactorL3",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "TruePowerFactorThreePhase",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "PhaseRotation",
+      "DataType": {
+       "Id": 6
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_EnergyElectricalObject"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_EnergyBaseObject
+  Id: g=78b04152d2da9f9908781838b5fc8589
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_EnergyBaseObject",
+    "DataType": {
+     "IdType": 2,
+     "Id": "78b04152d2da9f9908781838b5fc8589",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "ResourceType",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Capabilities",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Accuracy",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "AccuracyBasis",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "FullScaleReading",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "DataStatus",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "ConsumedEnergyOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "GeneratedEnergyOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "TotalEnergyOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5]
+     },{
+      "Name": "EnergyTransferRate",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_EnergyBaseObject"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrMonitor_Cmd
+  Id: g=54c7baa4b2df4d8c9db4eff4d48a007b
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrMonitor_Cmd",
+    "DataType": {
+     "IdType": 2,
+     "Id": "54c7baa4b2df4d8c9db4eff4d48a007b",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "bCmd",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Physical",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Virtual",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrMonitor_Cmd"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrMonitor_Sts
+  Id: g=494f8030842489046dda9263fdcc0253
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrMonitor_Sts",
+    "DataType": {
+     "IdType": 2,
+     "Id": "494f8030842489046dda9263fdcc0253",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "eState",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "FirstWarning",
+      "DataType": {
+       "IdType": 2,
+       "Id": "5ff869115aaf1c1bb2b98b3ac55613ea",
+       "Namespace": 18
+      }
+     },{
+      "Name": "FirstFault",
+      "DataType": {
+       "IdType": 2,
+       "Id": "5ff869115aaf1c1bb2b98b3ac55613ea",
+       "Namespace": 18
+      }
+     },{
+      "Name": "eCmdFail",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "bSts",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Physical",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Virtual",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Connected",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Available",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Warning",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Faulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Ready",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Active",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrMonitor_Sts"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Dvc_PM1000
+  Id: g=19c8f0bccf78443939141e73b5d7628b
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Dvc_PM1000",
+    "DataType": {
+     "IdType": 2,
+     "Id": "19c8f0bccf78443939141e73b5d7628b",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Ready",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Connected",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Available",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Warning",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Faulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_ER",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_Idle",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_AcquiringData",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_WaitingForCtrlResource",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Val_SampleInterval",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_DataAcquisitionDuration",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Sts_bNotReady",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "raC_Dvc_PM1000",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Val_Voltage_Phase_1_Angle",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Voltage_Phase_2_Angle",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Voltage_Phase_3_Angle",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Current_Phase_1_Angle",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Current_Phase_2_Angle",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Current_Phase_3_Angle",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Status_1_Count_x1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Status_2_Count_x1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_kWh_Net",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_kVARh_Net",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_kVAh_Net",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_kW_Demand",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_kVAR_Demand",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_kVA_Demand",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Projected_kW_Demand",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Projected_kVAR_Demand",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Val_Projected_kVA_Demand",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Sts_OdometerResetServiced",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Val_ERR",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Sts_eNotReady",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Sts_InhibitCmd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Sts_InhibitSet",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "HMI_Tab",
+      "DataType": {
+       "Id": 2
+      }
+     },{
+      "Name": "Inf_Type",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Wrk_bSts",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Sts_eEventValue",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [4]
+     },{
+      "Name": "Sts_tEventTimeD1",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Sts_tEventTimeD2",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Sts_tEventTimeD3",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Sts_tEventTimeD0",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     },{
+      "Name": "Sts_EventMessage",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "Sts_eEventType",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [4]
+     },{
+      "Name": "Sts_EnergyElectrical",
+      "DataType": {
+       "IdType": 2,
+       "Id": "529ca40c4f4eb789a100ffb9f6349b6b",
+       "Namespace": 18
+      }
+     },{
+      "Name": "Wrk_bSts1",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Sts_EnergyBase",
+      "DataType": {
+       "IdType": 2,
+       "Id": "78b04152d2da9f9908781838b5fc8589",
+       "Namespace": 18
+      }
+     },{
+      "Name": "HMI_Version",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Inf_Lib",
+      "DataType": {
+       "Id": 12
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Dvc_PM1000"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_Event
+  Id: g=5ff869115aaf1c1bb2b98b3ac55613ea
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_Event",
+    "DataType": {
+     "IdType": 2,
+     "Id": "5ff869115aaf1c1bb2b98b3ac55613ea",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "Type",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "ID",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Category",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Action",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Value",
+      "DataType": {
+       "Id": 6
+      }
+     },{
+      "Name": "Message",
+      "DataType": {
+       "Id": 12
+      }
+     },{
+      "Name": "EventTime_L",
+      "DataType": {
+       "Id": 8
+      }
+     },{
+      "Name": "EventTime_D",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7]
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_Event"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrMonitor_Set
+  Id: g=d26d45ef722099811435765eb2efc0cd
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrMonitor_Set",
+    "DataType": {
+     "IdType": 2,
+     "Id": "d26d45ef722099811435765eb2efc0cd",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "InhibitCmd",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InhibitSet",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "InhibitCfg",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrMonitor_Set"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

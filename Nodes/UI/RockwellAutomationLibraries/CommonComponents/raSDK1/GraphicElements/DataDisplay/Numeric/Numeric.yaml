@@ -1,0 +1,303 @@
+Name: Numeric
+Type: FolderType
+Children:
+- Name: raSDK1_ND_LblValUnit_Stack
+  Id: g=dc7b21077f9709b4290dd59f54663751
+  Supertype: ColumnLayout
+  Description: {"LocaleId":"en-US","Text":"Label, displayed value, unit of measure; vertically stacked and centered."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Label
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Label"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: -1.0
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "Data Label"
+  - Name: Value
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"{0:f{1}}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Inp_Value"
+        - Name: ns=3;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Set_DecimalPlaces"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Live Data"
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "if({0},\"Live Data Primary\",\"Live Data\")"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Cfg_DisplayAsPrimary"
+  - Name: Units
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Units"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Opacity
+      Type: BaseVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "De-emphasized Text"
+  - Name: Cfg_Label
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of displayed value."}
+    Value: {"LocaleId":"en-US","Text":"Label"}
+  - Name: Cfg_Units
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of displayed value unit of measure."}
+    Value: {"LocaleId":"en-US","Text":"Units"}
+  - Name: Inp_Value
+    Type: BaseDataVariableType
+    DataType: Float
+    Description: {"LocaleId":"en-US","Text":"Numeric value to be displayed."}
+  - Name: Set_DecimalPlaces
+    Type: BaseDataVariableType
+    DataType: Int32
+    Description: {"LocaleId":"en-US","Text":"Number of decimal places to be displayed."}
+  - Name: Cfg_DisplayAsPrimary
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Display the value as 'primary' data:  False = Normal weight with value font size equal to Set_SessionFontSize, True = Bold weight with value font size 20% larger than Set_SessionFontSize."}
+- Name: raSDK1_ND_ValUnit
+  Id: g=6652afa2449aca565d2f41394115d2fb
+  Supertype: RowLayout
+  Description: {"LocaleId":"en-US","Text":"Value and unit of measure inline; left justified."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: -1.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: -1.0
+  - Name: ContentAlignment
+    Type: BaseVariableType
+    DataType: ContentHorizontalAlignment
+    ModellingRule: Optional
+  - Name: Cfg_Units
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Description: {"LocaleId":"en-US","Text":"Text description of displayed value unit of measure."}
+    Value: {"LocaleId":"en-US","Text":"Units"}
+  - Name: Inp_Value
+    Type: BaseDataVariableType
+    DataType: Float
+    Description: {"LocaleId":"en-US","Text":"Numeric value to be displayed."}
+  - Name: Set_DecimalPlaces
+    Type: BaseDataVariableType
+    DataType: Int32
+    Description: {"LocaleId":"en-US","Text":"Number of decimal places to be displayed."}
+  - Name: Cfg_DisplayAsPrimary
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Description: {"LocaleId":"en-US","Text":"Display the value as 'primary' data:  False = Normal weight with value font size equal to Set_SessionFontSize, True = Bold weight with value font size 20% larger than Set_SessionFontSize."}
+  - Name: Value
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"{0:f{1}}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Inp_Value"
+        - Name: ns=3;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Set_DecimalPlaces"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Live Data"
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "if({0},\"Live Data Primary\",\"Live Data\")"
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Cfg_DisplayAsPrimary"
+  - Name: Units
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Units"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: -1.0
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "De-emphasized Text"
+  - Name: HorizontalGap
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 4.0

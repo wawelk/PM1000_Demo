@@ -1,0 +1,35 @@
+Name: FaceplatePanel
+Type: FolderType
+Children:
+- Name: raSDK1_PanelBase
+  Id: g=b7e52ab1a9399319d4f2e4a2d0cc143f
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Tag
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{raSDK1_DialogBox}/Ref_Tag@NodeId"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2

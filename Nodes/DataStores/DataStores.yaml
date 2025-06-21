@@ -1,0 +1,138 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: LocalInfluxDBDatabase1
+  Id: g=877cc9bc80ffad96a1d15c1a3dee894b
+  Type: InfluxDBStoreLocal
+  Children:
+  - Name: RetentionPeriod
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:01:00:00.0000000"
+  - Name: Username
+    Type: BaseDataVariableType
+    DataType: Password
+    AccessLevel: Read
+    Value: "CtwtHJHJ"
+  - Name: Password
+    Type: BaseDataVariableType
+    DataType: Password
+    AccessLevel: Read
+    Value: "QKzIzdFFd6nNAbrN"
+  - Name: Token
+    Type: BaseDataVariableType
+    DataType: Password
+    AccessLevel: Read
+    Value: "Ccq8LUpMYrkV187QOo0LT4sa"
+  - Name: Organization
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: "Rockwell"
+  - Name: Bucket
+    Type: BaseDataVariableType
+    DataType: String
+    AccessLevel: Read
+    Value: "bucket"
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: DataLogger1
+      Type: LocalInfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=27;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=27;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=27;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=27;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Average Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: 'Average L-L Volts'
+          Type: StoreColumn
+          DataType: Float
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+        - Name: Power Factor
+          Type: StoreColumn
+          DataType: Float
+        - Name: Total kW
+          Type: StoreColumn
+          DataType: Float
+        - Name: Total kVAR
+          Type: StoreColumn
+          DataType: Float
+        - Name: Total kVA
+          Type: StoreColumn
+          DataType: Float
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=27;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=27;i=59
+    Direction: Forward

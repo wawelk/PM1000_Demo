@@ -1,0 +1,5 @@
+Name: RockwellAutomationLibraries
+Type: FolderType
+Children:
+- File: CommonComponents/CommonComponents.yaml
+- File: PowerDevice_v4R/PowerDevice_v4R.yaml

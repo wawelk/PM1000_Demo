@@ -1,0 +1,27 @@
+Name: F23 Energy Results
+Type: FolderType
+Children:
+- Name: kWh Net
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F23:9"
+- Name: kVARh Net
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F23:15"
+- Name: kVAh Net
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F23:17"

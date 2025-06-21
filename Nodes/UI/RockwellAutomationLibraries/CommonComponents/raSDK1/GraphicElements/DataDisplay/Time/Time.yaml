@@ -1,0 +1,421 @@
+Name: Time
+Type: FolderType
+Children:
+- Name: raSDK1_TD_DateTime_Stack
+  Id: g=e078128c31cbaef0344afd8d87e4a0f8
+  Supertype: ColumnLayout
+  Description: {"LocaleId":"en-US","Text":"Date displayed value, time displayed values; vertically stacked and centered."}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Inp_Time
+    Type: BaseDataVariableType
+    DataType: Int32
+    Description: {"LocaleId":"en-US","Text":"DINT array representing time value to be displayed."}
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+  - Name: YYYY_MM_DD
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"{0:d}-{1}-{2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Inp_Time[0]"
+        - Name: ns=3;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Inp_Time[1]"
+        - Name: ns=3;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Inp_Time[2]"
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: ExpressionEvaluator1
+            Type: ExpressionEvaluator
+            Children:
+            - Name: Expression
+              Type: BaseDataVariableType
+              DataType: String
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "({0} >= 4) && ({0} <=6)"
+            - Name: ns=3;Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Cfg_Format"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: true
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Default"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../Cfg_Style"
+  - Name: Time
+    Type: RowLayout
+    Children:
+    - Name: hh_mm
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0}:{1}"}
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../Inp_Time[3]"
+          - Name: ns=3;Source1
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../Inp_Time[4]"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "({0} == 3)"
+              - Name: ns=3;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../Cfg_Format"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: true
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Default"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Cfg_Style"
+    - Name: ss
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":":{0}"}
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../Inp_Time[5]"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "({0} >= 2) && ({0} <= 4) "
+              - Name: ns=3;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../Cfg_Format"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: true
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Default"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Cfg_Style"
+    - Name: ms
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":":{0}"}
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "trunc (({0}) / (1000))"
+              - Name: ns=3;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../Inp_Time[6]"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 400
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "({0} >= 1) && ({0} <= 5) "
+              - Name: ns=3;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../../Cfg_Format"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: true
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Default"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Cfg_Style"
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+  - Name: Cfg_Format
+    Type: BaseDataVariableType
+    DataType: Int32
+    Description: {"LocaleId":"en-US","Text":"Date/Time format: 0 = YYYY-MM-DD hh:mm:ss:ms, 1 = YYYY-MM-DD hh:mm:ss, 2 = YYYY-MM-DD hh:mm, 3 = YYYY-MM-DD, 4 = hh:mm, 5 = hh:mm:ss, 6 = hh:mm:ss:ms"}
+  - Name: Cfg_Style
+    Type: BaseDataVariableType
+    DataType: String
+    Description: {"LocaleId":"en-US","Text":"Font style. Use \"Default\", \"Data Label\", \"Live Data\", \"Live Data Primary\", or \"De-emphasized Text\""}
+    Value: "Default"

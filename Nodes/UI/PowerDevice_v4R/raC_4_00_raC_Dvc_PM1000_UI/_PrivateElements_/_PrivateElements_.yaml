@@ -1,0 +1,791 @@
+Name: <PrivateElements>
+Type: FolderType
+Children:
+- File: 'Panels-Faceplate/Panels-Faceplate.yaml'
+- File: Widgets/Widgets.yaml
+- Name: raC_4_00_raC_Dvc_PM1000_InfLookup_Description
+  Id: g=35e7250477a650c285fff8242e85b1f8
+  Supertype: ValueMapConverter
+  Description: {"LocaleId":"en-US","Text":"Information loop-up table for fault table containing short descriptions for fault codes"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: ns=3;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair1
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 4294934528
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Description not found; see Product Manual."
+    - Name: Pair2
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 1
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Voltage Input over range."
+    - Name: Pair3
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 2
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Current Input over range."
+    - Name: Pair4
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 3
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Ethernet Communications Loss."
+    - Name: Pair5
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 4
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "SNTP Server timeout status."
+    - Name: Pair6
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 5
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Duplicate IP Address status."
+    - Name: Pair7
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 6
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Invalid IP/Netmask address."
+    - Name: Pair8
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 7
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Invalid gateway address."
+    - Name: Pair9
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 8
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Invalid SNTP time server address."
+    - Name: Pair10
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 9
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Modbus stack run status."
+    - Name: Pair11
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 10
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Demand broadcast thread run status."
+    - Name: Pair12
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 11
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "SNTP thread run status."
+    - Name: Pair13
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 12
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Loss of phase A."
+    - Name: Pair14
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 13
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Loss of phase B."
+    - Name: Pair15
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 14
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "Loss of phase C."
+    - Name: Pair16
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 25
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "CIP Message Error."
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    ModellingRule: Optional
+- Name: raC_4_00_raC_Dvc_PM1000_InfLookup_Details
+  Id: g=ddfe03d05ab6dde1dbd6daf3c1f60fe3
+  Supertype: ValueMapConverter
+  Description: {"LocaleId":"en-US","Text":"Information loop-up table for fault table containing long details/actions for fault codes"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: ns=3;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair1
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 4294934528
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "No description found in the lookup table for the current code."
+    - Name: Pair2
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 1
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Power Distribution Transformer. 2. Check Power Factor Correction Capacitor."
+    - Name: Pair3
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 2
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Loading of Power System."
+    - Name: Pair4
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 3
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Ethernet Connections."
+    - Name: Pair5
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 4
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Ethernet Connections."
+    - Name: Pair6
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 5
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Ethernet Connections."
+    - Name: Pair7
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 6
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Ethernet Connections."
+    - Name: Pair8
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 7
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Ethernet Connections."
+    - Name: Pair9
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 8
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Ethernet Connections."
+    - Name: Pair10
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 9
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Ethernet Connections."
+    - Name: Pair11
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 10
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Ethernet Connections."
+    - Name: Pair12
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 11
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Ethernet Connections."
+    - Name: Pair13
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 12
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Fuses/Circuit Breaker.\n2. Check Power Line Connections."
+    - Name: Pair14
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 13
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Fuses/Circuit Breaker.\n2. Check Power Line Connections."
+    - Name: Pair15
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 14
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check Fuses/Circuit Breaker.\n2. Check Power Line Connections."
+    - Name: Pair16
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 25
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: None
+        Value: "1. Check communication path for message instruction in AOI.\n2. Check Output Parameter Tag Sts.ERR."
+  - Name: Mode
+    Type: PropertyType
+    DataType: DynamicLinkMode
+    ReferenceType: HasComponent
+    ModellingRule: Optional
+- Name: raC_4_00_raC_Dvc_PM1000_Help
+  Id: g=cdfd05a693fe2b67fb3f813ac9a84922
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 700.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 600.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+  - Name: VerticalLayout
+    Type: ColumnLayout
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Help
+      Type: ScrollView
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: PDFViewer
+        Type: PdfViewer
+        Children:
+        - Name: Path
+          Type: BaseDataVariableType
+          DataType: ResourceUri
+          Value: "ns=18;%PROJECTDIR%/res/Help raC-4 Power.pdf"
+        - Name: CurrentPage
+          Type: BaseDataVariableType
+          DataType: Int32
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 400.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 300.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: ZoomMode
+          Type: BaseDataVariableType
+          DataType: PdfViewerZoomMode
+          ModellingRule: Optional
+        - Name: Visible
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+          Children:
+          - Name: ConditionalConverter1
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../Device - RM100/Expanded"
+            - Name: TrueValue
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+            - Name: FalseValue
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: true
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: Zoommable
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+      - Name: MinZoomOut
+        Type: BaseDataVariableType
+        DataType: Int32
+        ModellingRule: Optional
+        Value: 100
+      - Name: MaxZoomIn
+        Type: BaseDataVariableType
+        DataType: Int32
+        ModellingRule: Optional
+        Value: 100
+      - Name: ContentWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentHeight
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ViewHeight
+        Type: BaseDataVariableType
+        DataType: Size
+        AccessLevel: Read
+      - Name: ContentX
+        Type: BaseDataVariableType
+        DataType: Size
+      - Name: ContentY
+        Type: BaseDataVariableType
+        DataType: Size
+      - Class: Reference
+        Target: ns=5;i=1394
+        Direction: Forward
+    - Name: 'Device - RM100'
+      Type: Accordion
+      Children:
+      - Name: Header
+        Type: AccordionHeader
+        Children:
+        - Name: Label
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"DEVICE - RM100"}
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 5.0
+          - Name: Style
+            Type: BaseDataVariableType
+            DataType: String
+            ModellingRule: Optional
+            Value: "Heading"
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 2
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 2
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+      - Name: Content
+        Type: AccordionContent
+        Children:
+        - Name: WebBrowser1
+          Type: WebBrowser
+          Children:
+          - Name: URL
+            Type: BaseDataVariableType
+            DataType: ResourceUri
+            Value: "https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/device-rm100_-en-p.pdf"
+          - Class: Reference
+            Target: ns=5;i=354
+            Direction: Forward
+          - Class: Reference
+            Target: ns=5;i=356
+            Direction: Forward
+          - Class: Reference
+            Target: ns=5;i=358
+            Direction: Forward
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 300.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 300.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 570.0
+      - Name: Expanded
+        Type: BaseDataVariableType
+        DataType: Boolean
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 200.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 2
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 2

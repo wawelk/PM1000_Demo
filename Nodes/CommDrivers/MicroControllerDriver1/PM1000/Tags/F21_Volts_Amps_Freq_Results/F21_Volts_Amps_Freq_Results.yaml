@@ -1,0 +1,91 @@
+Name: F21 Volts Amps Freq Results
+Type: FolderType
+Children:
+- Name: L1 Current
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:0"
+- Name: L2 Current
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:1"
+- Name: L3 Current
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:2"
+- Name: Average Current
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:3"
+- Name: 'L1-L2 Volts'
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:8"
+- Name: 'L2-L3 Volts'
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:9"
+- Name: 'L3-L1 Volts'
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:10"
+- Name: 'Average L-L Volts'
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:11"
+- Name: Frequency
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:12"
+- Name: Current Unbalance
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:13"
+- Name: Voltage Unbalance
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F21:14"

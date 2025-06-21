@@ -1,0 +1,4 @@
+Name: RAEtherNet_IPDriver1
+Type: RAEtherNetIPDriver
+Children:
+- File: CMX_5380/CMX_5380.yaml

@@ -1,0 +1,35 @@
+Name: F24 Demand Results
+Type: FolderType
+Children:
+- Name: kW Demand
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F24:0"
+- Name: kVAR Demand
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F24:1"
+- Name: kVA Demand
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F24:2"
+- Name: Demand PF
+  Type: MicroControllerTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "F24:3"

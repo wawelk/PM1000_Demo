@@ -1,0 +1,1568 @@
+Name: 'Program:MainProgram'
+Type: FolderType
+Children:
+- Name: PM1000
+  Id: g=16b507901e530842aa8a42712a81a48a
+  Type: raC_Dvc_PM1000
+  DataType: raC_Dvc_PM1000
+  Children:
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.EnableIn"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.EnableOut"
+  - Name: Sts_Ready
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_Ready"
+  - Name: Sts_Connected
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_Connected"
+  - Name: Sts_Available
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_Available"
+  - Name: Sts_Warning
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_Warning"
+  - Name: Sts_Faulted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_Faulted"
+  - Name: Sts_ER
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_ER"
+  - Name: Sts_Idle
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_Idle"
+  - Name: Sts_AcquiringData
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_AcquiringData"
+  - Name: Sts_WaitingForCtrlResource
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_WaitingForCtrlResource"
+  - Name: Val_SampleInterval
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_SampleInterval"
+  - Name: Val_DataAcquisitionDuration
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_DataAcquisitionDuration"
+  - Name: Sts_bNotReady
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_bNotReady"
+  - Name: raC_Dvc_PM1000
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.raC_Dvc_PM1000"
+  - Name: Val_Voltage_Phase_1_Angle
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Voltage_Phase_1_Angle"
+  - Name: Val_Voltage_Phase_2_Angle
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Voltage_Phase_2_Angle"
+  - Name: Val_Voltage_Phase_3_Angle
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Voltage_Phase_3_Angle"
+  - Name: Val_Current_Phase_1_Angle
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Current_Phase_1_Angle"
+  - Name: Val_Current_Phase_2_Angle
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Current_Phase_2_Angle"
+  - Name: Val_Current_Phase_3_Angle
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Current_Phase_3_Angle"
+  - Name: Val_Status_1_Count_x1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Status_1_Count_x1"
+  - Name: Val_Status_2_Count_x1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Status_2_Count_x1"
+  - Name: Val_kWh_Net
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_kWh_Net"
+  - Name: Val_kVARh_Net
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_kVARh_Net"
+  - Name: Val_kVAh_Net
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_kVAh_Net"
+  - Name: Val_kW_Demand
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_kW_Demand"
+  - Name: Val_kVAR_Demand
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_kVAR_Demand"
+  - Name: Val_kVA_Demand
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_kVA_Demand"
+  - Name: Val_Projected_kW_Demand
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Projected_kW_Demand"
+  - Name: Val_Projected_kVAR_Demand
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Projected_kVAR_Demand"
+  - Name: Val_Projected_kVA_Demand
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_Projected_kVA_Demand"
+  - Name: Sts_OdometerResetServiced
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_OdometerResetServiced"
+  - Name: Val_ERR
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Val_ERR"
+  - Name: Sts_eNotReady
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_eNotReady"
+  - Name: Sts_InhibitCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_InhibitCmd"
+  - Name: Sts_InhibitSet
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_InhibitSet"
+  - Name: HMI_Tab
+    Type: RAEtherNetIPTag
+    DataType: SByte
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.HMI_Tab"
+  - Name: Inf_Type
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Inf_Type"
+  - Name: Wrk_bSts
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Wrk_bSts"
+  - Name: Sts_eEventValue
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_eEventValue"
+  - Name: Sts_tEventTimeD1
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_tEventTimeD1"
+  - Name: Sts_tEventTimeD2
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_tEventTimeD2"
+  - Name: Sts_tEventTimeD3
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_tEventTimeD3"
+  - Name: Sts_tEventTimeD0
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [7]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_tEventTimeD0"
+  - Name: Sts_EventMessage
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_EventMessage"
+  - Name: Sts_eEventType
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Sts_eEventType"
+  - Name: Sts_EnergyElectrical
+    Type: raC_UDT_EnergyElectricalObject
+    DataType: raC_UDT_EnergyElectricalObject
+    Children:
+    - Name: RealEnergyConsumedOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.RealEnergyConsumedOdo"
+    - Name: RealEnergyGeneratedOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.RealEnergyGeneratedOdo"
+    - Name: RealEnergyNetOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.RealEnergyNetOdo"
+    - Name: ReactiveEnergyConsumedOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ReactiveEnergyConsumedOdo"
+    - Name: ReactiveEnergyGeneratedOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ReactiveEnergyGeneratedOdo"
+    - Name: ReactiveEnergyNetOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ReactiveEnergyNetOdo"
+    - Name: ApparentEnergyOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ApparentEnergyOdo"
+    - Name: KiloampereHoursOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.KiloampereHoursOdo"
+    - Name: LineFrequency
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.LineFrequency"
+    - Name: CurrentL1
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.CurrentL1"
+    - Name: CurrentL2
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.CurrentL2"
+    - Name: CurrentL3
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.CurrentL3"
+    - Name: AverageCurrent
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.AverageCurrent"
+    - Name: CurrentPercentUnbalanced
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.CurrentPercentUnbalanced"
+    - Name: VoltageL1N
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.VoltageL1N"
+    - Name: VoltageL2N
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.VoltageL2N"
+    - Name: VoltageL3N
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.VoltageL3N"
+    - Name: VoltageAverageLN
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.VoltageAverageLN"
+    - Name: VoltageL1L2
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.VoltageL1L2"
+    - Name: VoltageL2L3
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.VoltageL2L3"
+    - Name: VoltageL3L1
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.VoltageL3L1"
+    - Name: VoltageAverageLL
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.VoltageAverageLL"
+    - Name: VoltagePercentUnbalanced
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.VoltagePercentUnbalanced"
+    - Name: RealPowerL1
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.RealPowerL1"
+    - Name: RealPowerL2
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.RealPowerL2"
+    - Name: RealPowerL3
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.RealPowerL3"
+    - Name: RealPowerTotal
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.RealPowerTotal"
+    - Name: ReactivePowerL1
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ReactivePowerL1"
+    - Name: ReactivePowerL2
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ReactivePowerL2"
+    - Name: ReactivePowerL3
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ReactivePowerL3"
+    - Name: ReactivePowerTotal
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ReactivePowerTotal"
+    - Name: ApparentPowerL1
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ApparentPowerL1"
+    - Name: ApparentPowerL2
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ApparentPowerL2"
+    - Name: ApparentPowerL3
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ApparentPowerL3"
+    - Name: ApparentPowerTotal
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.ApparentPowerTotal"
+    - Name: TruePowerFactorL1
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.TruePowerFactorL1"
+    - Name: TruePowerFactorL2
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.TruePowerFactorL2"
+    - Name: TruePowerFactorL3
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.TruePowerFactorL3"
+    - Name: TruePowerFactorThreePhase
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.TruePowerFactorThreePhase"
+    - Name: PhaseRotation
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyElectrical.PhaseRotation"
+  - Name: Wrk_bSts1
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Wrk_bSts1"
+  - Name: Sts_EnergyBase
+    Type: raC_UDT_EnergyBaseObject
+    DataType: raC_UDT_EnergyBaseObject
+    Children:
+    - Name: ResourceType
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.ResourceType"
+    - Name: Capabilities
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.Capabilities"
+    - Name: Accuracy
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.Accuracy"
+    - Name: AccuracyBasis
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.AccuracyBasis"
+    - Name: FullScaleReading
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.FullScaleReading"
+    - Name: DataStatus
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.DataStatus"
+    - Name: ConsumedEnergyOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.ConsumedEnergyOdo"
+    - Name: GeneratedEnergyOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.GeneratedEnergyOdo"
+    - Name: TotalEnergyOdo
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.TotalEnergyOdo"
+    - Name: EnergyTransferRate
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000.Sts_EnergyBase.EnergyTransferRate"
+  - Name: HMI_Version
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.HMI_Version"
+  - Name: Inf_Lib
+    Type: RAEtherNetIPTag
+    DataType: String
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000.Inf_Lib"
+- Name: PM1000_CtrlCmd
+  Type: raC_UDT_ItfAD_PwrMonitor_Cmd
+  DataType: raC_UDT_ItfAD_PwrMonitor_Cmd
+  Children:
+  - Name: bCmd
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlCmd.bCmd"
+  - Name: Physical
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlCmd.Physical"
+  - Name: Virtual
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlCmd.Virtual"
+- Name: PM1000_CtrlSet
+  Type: raC_UDT_ItfAD_PwrMonitor_Set
+  DataType: raC_UDT_ItfAD_PwrMonitor_Set
+  Children:
+  - Name: InhibitCmd
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSet.InhibitCmd"
+  - Name: InhibitSet
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSet.InhibitSet"
+  - Name: InhibitCfg
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSet.InhibitCfg"
+- Name: PM1000_CtrlSts
+  Type: raC_UDT_ItfAD_PwrMonitor_Sts
+  DataType: raC_UDT_ItfAD_PwrMonitor_Sts
+  Children:
+  - Name: eState
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.eState"
+  - Name: FirstWarning
+    Type: raC_UDT_Event
+    DataType: raC_UDT_Event
+    Children:
+    - Name: Type
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstWarning.Type"
+    - Name: ID
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstWarning.ID"
+    - Name: Category
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstWarning.Category"
+    - Name: Action
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstWarning.Action"
+    - Name: Value
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstWarning.Value"
+    - Name: Message
+      Type: RAEtherNetIPTag
+      DataType: String
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstWarning.Message"
+    - Name: EventTime_L
+      Type: RAEtherNetIPTag
+      DataType: Int64
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstWarning.EventTime_L"
+    - Name: EventTime_D
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [7]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstWarning.EventTime_D"
+  - Name: FirstFault
+    Type: raC_UDT_Event
+    DataType: raC_UDT_Event
+    Children:
+    - Name: Type
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstFault.Type"
+    - Name: ID
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstFault.ID"
+    - Name: Category
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstFault.Category"
+    - Name: Action
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstFault.Action"
+    - Name: Value
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstFault.Value"
+    - Name: Message
+      Type: RAEtherNetIPTag
+      DataType: String
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstFault.Message"
+    - Name: EventTime_L
+      Type: RAEtherNetIPTag
+      DataType: Int64
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstFault.EventTime_L"
+    - Name: EventTime_D
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      ValueRank: OneDimension
+      ArrayDimensions: [7]
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.PM1000_CtrlSts.FirstFault.EventTime_D"
+  - Name: eCmdFail
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.eCmdFail"
+  - Name: bSts
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.bSts"
+  - Name: Physical
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.Physical"
+  - Name: Virtual
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.Virtual"
+  - Name: Connected
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.Connected"
+  - Name: Available
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.Available"
+  - Name: Warning
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.Warning"
+  - Name: Faulted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.Faulted"
+  - Name: Ready
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.Ready"
+  - Name: Active
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_CtrlSts.Active"
+- Name: PM1000_EnergyBase
+  Type: raC_UDT_EnergyBaseObject
+  DataType: raC_UDT_EnergyBaseObject
+  Children:
+  - Name: ResourceType
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.ResourceType"
+  - Name: Capabilities
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.Capabilities"
+  - Name: Accuracy
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.Accuracy"
+  - Name: AccuracyBasis
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.AccuracyBasis"
+  - Name: FullScaleReading
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.FullScaleReading"
+  - Name: DataStatus
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.DataStatus"
+  - Name: ConsumedEnergyOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.ConsumedEnergyOdo"
+  - Name: GeneratedEnergyOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.GeneratedEnergyOdo"
+  - Name: TotalEnergyOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.TotalEnergyOdo"
+  - Name: EnergyTransferRate
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyBase.EnergyTransferRate"
+- Name: PM1000_EnergyElectrical
+  Type: raC_UDT_EnergyElectricalObject
+  DataType: raC_UDT_EnergyElectricalObject
+  Children:
+  - Name: RealEnergyConsumedOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.RealEnergyConsumedOdo"
+  - Name: RealEnergyGeneratedOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.RealEnergyGeneratedOdo"
+  - Name: RealEnergyNetOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.RealEnergyNetOdo"
+  - Name: ReactiveEnergyConsumedOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ReactiveEnergyConsumedOdo"
+  - Name: ReactiveEnergyGeneratedOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ReactiveEnergyGeneratedOdo"
+  - Name: ReactiveEnergyNetOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ReactiveEnergyNetOdo"
+  - Name: ApparentEnergyOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ApparentEnergyOdo"
+  - Name: KiloampereHoursOdo
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.KiloampereHoursOdo"
+  - Name: LineFrequency
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.LineFrequency"
+  - Name: CurrentL1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.CurrentL1"
+  - Name: CurrentL2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.CurrentL2"
+  - Name: CurrentL3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.CurrentL3"
+  - Name: AverageCurrent
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.AverageCurrent"
+  - Name: CurrentPercentUnbalanced
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.CurrentPercentUnbalanced"
+  - Name: VoltageL1N
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.VoltageL1N"
+  - Name: VoltageL2N
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.VoltageL2N"
+  - Name: VoltageL3N
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.VoltageL3N"
+  - Name: VoltageAverageLN
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.VoltageAverageLN"
+  - Name: VoltageL1L2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.VoltageL1L2"
+  - Name: VoltageL2L3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.VoltageL2L3"
+  - Name: VoltageL3L1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.VoltageL3L1"
+  - Name: VoltageAverageLL
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.VoltageAverageLL"
+  - Name: VoltagePercentUnbalanced
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.VoltagePercentUnbalanced"
+  - Name: RealPowerL1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.RealPowerL1"
+  - Name: RealPowerL2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.RealPowerL2"
+  - Name: RealPowerL3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.RealPowerL3"
+  - Name: RealPowerTotal
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.RealPowerTotal"
+  - Name: ReactivePowerL1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ReactivePowerL1"
+  - Name: ReactivePowerL2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ReactivePowerL2"
+  - Name: ReactivePowerL3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ReactivePowerL3"
+  - Name: ReactivePowerTotal
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ReactivePowerTotal"
+  - Name: ApparentPowerL1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ApparentPowerL1"
+  - Name: ApparentPowerL2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ApparentPowerL2"
+  - Name: ApparentPowerL3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ApparentPowerL3"
+  - Name: ApparentPowerTotal
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.ApparentPowerTotal"
+  - Name: TruePowerFactorL1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.TruePowerFactorL1"
+  - Name: TruePowerFactorL2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.TruePowerFactorL2"
+  - Name: TruePowerFactorL3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.TruePowerFactorL3"
+  - Name: TruePowerFactorThreePhase
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.TruePowerFactorThreePhase"
+  - Name: PhaseRotation
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.PM1000_EnergyElectrical.PhaseRotation"
