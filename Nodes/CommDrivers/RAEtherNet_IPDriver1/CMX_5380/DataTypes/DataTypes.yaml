@@ -739,6 +739,112 @@ Children:
     DisplayName: {"LocaleId":"","Text":"Default Binary"}
     ReferenceType: HasEncoding
 - Class: DataType
+  Name: 'AB:1408_0ED79BF4:I:0'
+  Id: g=c5776110c6e2d525c3f7dfdcf41442bb
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "AB:1408_0ED79BF4:I:0",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c5776110c6e2d525c3f7dfdcf41442bb",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "ConnectionFaulted",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "UserSelectPara1",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara2",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara3",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara4",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara5",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara6",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara7",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara8",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara9",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara10",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara11",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara12",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara13",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara14",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara15",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "UserSelectPara16",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"AB:1408_0ED79BF4:I:0"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
   Name: raC_UDT_Event
   Id: g=5ff869115aaf1c1bb2b98b3ac55613ea
   Supertype: Structure

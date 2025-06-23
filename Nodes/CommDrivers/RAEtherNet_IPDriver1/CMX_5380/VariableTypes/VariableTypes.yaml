@@ -1547,6 +1547,148 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Inf_Lib"
+- Name: 'AB:1408_0ED79BF4:I:0'
+  Id: g=7075b1e43de7552610bd836a2b6b5909
+  Supertype: TagStructure
+  DataType: 'AB:1408_0ED79BF4:I:0'
+  ValueRank: Any
+  Children:
+  - Name: ConnectionFaulted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "ConnectionFaulted"
+  - Name: UserSelectPara1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara1"
+  - Name: UserSelectPara2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara2"
+  - Name: UserSelectPara3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara3"
+  - Name: UserSelectPara4
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara4"
+  - Name: UserSelectPara5
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara5"
+  - Name: UserSelectPara6
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara6"
+  - Name: UserSelectPara7
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara7"
+  - Name: UserSelectPara8
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara8"
+  - Name: UserSelectPara9
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara9"
+  - Name: UserSelectPara10
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara10"
+  - Name: UserSelectPara11
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara11"
+  - Name: UserSelectPara12
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara12"
+  - Name: UserSelectPara13
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara13"
+  - Name: UserSelectPara14
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara14"
+  - Name: UserSelectPara15
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara15"
+  - Name: UserSelectPara16
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UserSelectPara16"
 - Name: raC_UDT_Event
   Id: g=851a9931ccc41b5532bec57e791b6078
   Supertype: TagStructure

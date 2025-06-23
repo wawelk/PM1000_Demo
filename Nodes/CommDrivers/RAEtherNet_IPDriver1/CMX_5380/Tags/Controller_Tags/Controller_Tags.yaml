@@ -1,0 +1,287 @@
+Name: Controller Tags
+Type: FolderType
+Children:
+- Name: 'Module_PM1000:I'
+  Type: 'AB:1408_0ED79BF4:I:0'
+  DataType: 'AB:1408_0ED79BF4:I:0'
+  Children:
+  - Name: ConnectionFaulted
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.ConnectionFaulted"
+  - Name: UserSelectPara1
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara1"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "L1 Current (amperes)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara1.@Description"
+  - Name: UserSelectPara2
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara2"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "L2 Current (amperes)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara2.@Description"
+  - Name: UserSelectPara3
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara3"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "L3 Current (amperes)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara3.@Description"
+  - Name: UserSelectPara4
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara4"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "L1-L2 Volts (volts)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara4.@Description"
+  - Name: UserSelectPara5
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara5"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "L2-L3 Volts (volts)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara5.@Description"
+  - Name: UserSelectPara6
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara6"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "L3-L1 Volts (volts)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara6.@Description"
+  - Name: UserSelectPara7
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara7"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Frequency (Hz)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara7.@Description"
+  - Name: UserSelectPara8
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara8"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Total kW"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara8.@Description"
+  - Name: UserSelectPara9
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara9"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Total kVAR"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara9.@Description"
+  - Name: UserSelectPara10
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara10"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Total kVA"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara10.@Description"
+  - Name: UserSelectPara11
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara11"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "3 Phase True Power Factor (%)"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara11.@Description"
+  - Name: UserSelectPara12
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara12"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "kWh Net"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara12.@Description"
+  - Name: UserSelectPara13
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara13"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Status 1 Count x1"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara13.@Description"
+  - Name: UserSelectPara14
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara14"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Status 2 Count x1"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara14.@Description"
+  - Name: UserSelectPara15
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara15"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "kW Demand"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara15.@Description"
+  - Name: UserSelectPara16
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Module_PM1000:I.UserSelectPara16"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Status Input States"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Module_PM1000:I.UserSelectPara16.@Description"

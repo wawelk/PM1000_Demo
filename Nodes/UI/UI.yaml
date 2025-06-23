@@ -977,7 +977,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/PM1000_Demo/UI/Screens/Add_On_Instruction"
+          Value: "/Objects/PM1000_Demo/UI/Screens/Logix_AOP"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -992,7 +992,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/PM1000_Demo/UI/Screens/InfluxDB"
+          Value: "/Objects/PM1000_Demo/UI/Screens/Device_Library"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1007,13 +1007,28 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/PM1000_Demo/UI/Screens/PM1000"
+          Value: "/Objects/PM1000_Demo/UI/Screens/InfluxDB"
           Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel6
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/PM1000_Demo/UI/Screens/PM1000"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel7
         Type: NavigationPanelItem
         Children:
         - Name: Title
