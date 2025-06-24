@@ -12,6 +12,7 @@ using FTOptix.DataLogger;
 using FTOptix.Store;
 using FTOptix.InfluxDBStoreLocal;
 using FTOptix.InfluxDBStore;
+using FTOptix.WebUI;
 #endregion
 
 public class NetworkConfiguratorEditModelsLogic : BaseNetLogic

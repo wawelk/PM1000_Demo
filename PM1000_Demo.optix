@@ -129,15 +129,23 @@ Project:
    Uri: 'urn:FTOptix:InfluxDBStoreLocal:Net'
    Module: FTOptix.InfluxDBStoreLocal.Net
    Version: 1.0
+  33:
+   Uri: 'urn:FTOptix:WebUI'
+   Module: FTOptix.WebUI
+   Version: 1.2
+  34:
+   Uri: 'urn:FTOptix:WebUI:Net'
+   Module: FTOptix.WebUI.Net
+   Version: 1.2
  Statistics:
-  TotalNodeCount: 11008
-  Objects: 1874
+  TotalNodeCount: 11072
+  Objects: 1887
   ObjectTypes: 47
-  Variables: 9060
+  Variables: 9111
   VariableTypes: 8
   DataTypes: 8
   Methods: 11
-  References: 74
+  References: 79
   ReferenceTypes: 0
   Files: 70
  Nodes:
