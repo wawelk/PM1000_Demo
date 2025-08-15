@@ -11,6 +11,7 @@ using FTOptix.Store;
 using FTOptix.InfluxDBStoreLocal;
 using FTOptix.InfluxDBStore;
 using FTOptix.WebUI;
+using FTOptix.InfluxDBStoreRemote;
 #endregion
 
 public class NetworkInterfacesEditModelReaderLogic : BaseNetLogic

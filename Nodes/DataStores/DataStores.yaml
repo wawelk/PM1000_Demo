@@ -1,44 +1,45 @@
 Name: DataStores
 Type: DataStoresCategoryFolder
 Children:
-- Name: LocalInfluxDBDatabase1
-  Id: g=877cc9bc80ffad96a1d15c1a3dee894b
-  Type: InfluxDBStoreLocal
+- Name: RemoteInfluxDBDatabase1
+  Id: g=c6aa5331dcc11601f483c2495bf6a122
+  Type: InfluxDBStoreRemote
   Children:
-  - Name: RetentionPeriod
-    Type: BaseDataVariableType
-    DataType: Duration
-    Value: "0:01:00:00.0000000"
-  - Name: Username
-    Type: BaseDataVariableType
-    DataType: Password
-    AccessLevel: Read
-    Value: "CtwtHJHJ"
-  - Name: Password
-    Type: BaseDataVariableType
-    DataType: Password
-    AccessLevel: Read
-    Value: "QKzIzdFFd6nNAbrN"
-  - Name: Token
-    Type: BaseDataVariableType
-    DataType: Password
-    AccessLevel: Read
-    Value: "Ccq8LUpMYrkV187QOo0LT4sa"
-  - Name: Organization
+  - Name: Server
     Type: BaseDataVariableType
     DataType: String
-    AccessLevel: Read
-    Value: "Rockwell"
-  - Name: Bucket
+    Value: "192.168.254.22"
+  - Name: Port
     Type: BaseDataVariableType
-    DataType: String
+    DataType: UInt16
+    Value: 8086
+  - Name: UseSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: SFEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: SFBufferMaxSize
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 1000
+  - Name: SFBufferUsage
+    Type: BaseDataVariableType
+    DataType: UInt32
     AccessLevel: Read
-    Value: "bucket"
+  - Name: SFBufferOverflow
+    Type: BaseDataVariableType
+    DataType: Boolean
+    AccessLevel: Read
+  - Name: SFBufferOverwrite
+    Type: BaseDataVariableType
+    DataType: Boolean
   - Name: Tables
     Type: BaseObjectType
     Children:
     - Name: DataLogger1
-      Type: LocalInfluxDBStoreTable
+      Type: RemoteInfluxDBStoreTable
       Children:
       - Name: Tags
         Type: BaseObjectType
@@ -66,24 +67,27 @@ Children:
         - Name: Average Current
           Type: StoreColumn
           DataType: Float
-        - Name: 'Average L-L Volts'
-          Type: StoreColumn
-          DataType: Float
-        - Name: Frequency
-          Type: StoreColumn
-          DataType: Float
-        - Name: Power Factor
-          Type: StoreColumn
-          DataType: Float
         - Name: Total kW
           Type: StoreColumn
           DataType: Float
-        - Name: Total kVAR
+        - Name: Motor101_Current
           Type: StoreColumn
           DataType: Float
-        - Name: Total kVA
+        - Name: Motor102_Current
           Type: StoreColumn
           DataType: Float
+  - Name: Token
+    Type: BaseDataVariableType
+    DataType: Password
+    Value: "9FJ98n_AJ0EV0fyd2XC-8pjbtdxIGrWsnqlvrrXX9U508yMoirXSlKdHhUMrygrbwQzAKGrepTSobrmfDo9HAw=="
+  - Name: Organization
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "labuser"
+  - Name: Bucket
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "PowerData"
   - Name: MaxColumnNameLength
     Type: BaseDataVariableType
     DataType: UInt32

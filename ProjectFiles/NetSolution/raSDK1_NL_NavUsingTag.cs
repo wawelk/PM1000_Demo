@@ -27,6 +27,7 @@ using FTOptix.EventLogger;
 using FTOptix.SerialPort;
 using FTOptix.InfluxDBStoreLocal;
 using FTOptix.InfluxDBStore;
+using FTOptix.InfluxDBStoreRemote;
 #endregion
 
 /*

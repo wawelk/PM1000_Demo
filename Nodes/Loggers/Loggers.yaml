@@ -2,7 +2,7 @@ Name: Loggers
 Type: LoggersCategoryFolder
 Children:
 - Name: DataLogger1
-  Id: g=0300d98201745c2e9763cb97543c4ee0
+  Id: g=fe141a6a5ebe2406524e29ff76564eda
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -12,7 +12,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/PM1000_Demo/DataStores/LocalInfluxDBDatabase1"
+    Value: "/Objects/PM1000_Demo/DataStores/RemoteInfluxDBDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -46,81 +46,6 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
-    - Name: 'Average L-L Volts'
-      Type: VariableToLog
-      DataType: BaseDataType
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/MicroControllerDriver1/PM1000/Tags/F21 Volts Amps Freq Results/Average L-L Volts"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: Frequency
-      Type: VariableToLog
-      DataType: BaseDataType
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/MicroControllerDriver1/PM1000/Tags/F21 Volts Amps Freq Results/Frequency"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: Power Factor
-      Type: VariableToLog
-      DataType: BaseDataType
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../CommDrivers/MicroControllerDriver1/PM1000/Tags/F22 Power Results/Power Factor"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
     - Name: Total kW
       Type: VariableToLog
       DataType: BaseDataType
@@ -146,7 +71,7 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
-    - Name: Total kVAR
+    - Name: Motor101_Current
       Type: VariableToLog
       DataType: BaseDataType
       Children:
@@ -165,13 +90,13 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../CommDrivers/MicroControllerDriver1/PM1000/Tags/F22 Power Results/Total kVAR"
+        Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/CMX_5380/Tags/Program&:MainProgram/Motor101_Current"
         Children:
         - Name: Mode
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
-    - Name: Total kVA
+    - Name: Motor102_Current
       Type: VariableToLog
       DataType: BaseDataType
       Children:
@@ -190,7 +115,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../CommDrivers/MicroControllerDriver1/PM1000/Tags/F22 Power Results/Total kVA"
+        Value: "../../../../CommDrivers/RAEtherNet_IPDriver1/CMX_5380/Tags/Program&:MainProgram/Motor102_Current"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -203,3 +128,11 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+  - Name: PollingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:10.0000000"

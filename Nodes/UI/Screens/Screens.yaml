@@ -74,20 +74,35 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Motor101_Current
         Type: TrendPen
         DataType: BaseDataType
         Children:
         - Name: Thickness
           Type: BaseDataVariableType
           DataType: Size
-          Value: -1.0
+          Value: 2.0
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#eb001b"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Motor101_Current/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -101,7 +116,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:03:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -126,6 +141,7 @@ Children:
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
+        Value: true
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -167,26 +183,57 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 40.0
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/PM1000_Demo/Loggers/DataLogger1"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+    - Name: RefreshTime
+      Type: BaseDataVariableType
+      DataType: UInt32
+      ModellingRule: Optional
+      Value: 1000
   - Name: Trend2
     Type: Trend
     Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: Motor102_Current
         Type: TrendPen
         DataType: BaseDataType
         Children:
         - Name: Thickness
           Type: BaseDataVariableType
           DataType: Size
-          Value: -1.0
+          Value: 2.0
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
         - Name: Thresholds
           Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#eb001b"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Motor102_Current/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=5;i=1129
       Direction: Forward
@@ -200,7 +247,7 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:05.0000000"
+        Value: "0:00:03:00.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -225,6 +272,7 @@ Children:
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
+        Value: true
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -266,6 +314,17 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 390.0
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/PM1000_Demo/Loggers/DataLogger1"
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
   - Name: MomentaryButton1
     Type: MomentaryButton
     Children:
@@ -7450,7 +7509,7 @@ Children:
     - Name: Model
       Type: NodePointer
       DataType: NodeId
-      Value: "/Objects/PM1000_Demo/DataStores/LocalInfluxDBDatabase1"
+      Value: "/Objects/PM1000_Demo/DataStores/RemoteInfluxDBDatabase1"
       Children:
       - Name: ItemKind
         Type: PropertyType
@@ -7479,6 +7538,7 @@ Children:
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
+          Value: true
         - Name: HeaderAlignment
           Type: BaseDataVariableType
           DataType: TextHorizontalAlignment
@@ -7572,114 +7632,6 @@ Children:
               Type: DynamicLink
               DataType: NodePath
               Value: "{Item}/Average Current"
-      - Name: 'Average L-L Volts'
-        Type: DataGridColumn
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Average L-L Volts"}
-        - Name: Width
-          Type: BaseDataVariableType
-          DataType: Size
-          Value: -1.0
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: HeaderAlignment
-          Type: BaseDataVariableType
-          DataType: TextHorizontalAlignment
-        - Name: ContentAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-        - Name: OrderBy
-          Type: BaseDataVariableType
-          DataType: NodePath
-          Value: "{Item}/Average L-L Volts"
-        - Name: DataItemTemplate
-          Type: DataGridLabelItemTemplate
-          Children:
-          - Name: Text
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Item}/Average L-L Volts"
-      - Name: Frequency
-        Type: DataGridColumn
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Frequency"}
-        - Name: Width
-          Type: BaseDataVariableType
-          DataType: Size
-          Value: -1.0
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: HeaderAlignment
-          Type: BaseDataVariableType
-          DataType: TextHorizontalAlignment
-        - Name: ContentAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-        - Name: OrderBy
-          Type: BaseDataVariableType
-          DataType: NodePath
-          Value: "{Item}/Frequency"
-        - Name: DataItemTemplate
-          Type: DataGridLabelItemTemplate
-          Children:
-          - Name: Text
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Item}/Frequency"
-      - Name: Power Factor
-        Type: DataGridColumn
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Power Factor"}
-        - Name: Width
-          Type: BaseDataVariableType
-          DataType: Size
-          Value: -1.0
-        - Name: Visible
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: HeaderAlignment
-          Type: BaseDataVariableType
-          DataType: TextHorizontalAlignment
-        - Name: ContentAlignment
-          Type: BaseVariableType
-          DataType: HorizontalAlignment
-        - Name: OrderBy
-          Type: BaseDataVariableType
-          DataType: NodePath
-          Value: "{Item}/Power Factor"
-        - Name: DataItemTemplate
-          Type: DataGridLabelItemTemplate
-          Children:
-          - Name: Text
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Item}/Power Factor"
       - Name: Total kW
         Type: DataGridColumn
         Children:
@@ -7716,13 +7668,13 @@ Children:
               Type: DynamicLink
               DataType: NodePath
               Value: "{Item}/Total kW"
-      - Name: Total kVAR
+      - Name: Motor101_Current
         Type: DataGridColumn
         Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Total kVAR"}
+          Value: {"LocaleId":"en-US","Text":"Motor101_Current"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -7740,7 +7692,7 @@ Children:
         - Name: OrderBy
           Type: BaseDataVariableType
           DataType: NodePath
-          Value: "{Item}/Total kVAR"
+          Value: "{Item}/Motor101_Current"
         - Name: DataItemTemplate
           Type: DataGridLabelItemTemplate
           Children:
@@ -7751,14 +7703,14 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Item}/Total kVAR"
-      - Name: Total kVA
+              Value: "{Item}/Motor101_Current"
+      - Name: Motor102_Current
         Type: DataGridColumn
         Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Total kVA"}
+          Value: {"LocaleId":"en-US","Text":"Motor102_Current"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -7776,7 +7728,7 @@ Children:
         - Name: OrderBy
           Type: BaseDataVariableType
           DataType: NodePath
-          Value: "{Item}/Total kVA"
+          Value: "{Item}/Motor102_Current"
         - Name: DataItemTemplate
           Type: DataGridLabelItemTemplate
           Children:
@@ -7787,7 +7739,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Item}/Total kVA"
+              Value: "{Item}/Motor102_Current"
     - Name: SelectedItem
       Type: NodePointer
       DataType: NodeId
@@ -7829,6 +7781,11 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 360.0
+    - Name: AutoRefreshTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:10.0000000"
     - Name: SortColumn
       Type: BaseDataVariableType
       DataType: NodeId
@@ -7841,11 +7798,6 @@ Children:
       Type: BaseDataVariableType
       DataType: SortOrderEnum
       Value: 1
-    - Name: AutoRefreshTime
-      Type: BaseDataVariableType
-      DataType: Duration
-      ModellingRule: Optional
-      Value: "0:00:00:10.0000000"
   - Name: BackgroundColor
     Type: BaseDataVariableType
     DataType: Color
@@ -7878,14 +7830,14 @@ Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: Total kW
+      - Name: Average Current
         Type: TrendPen
         DataType: BaseDataType
         Children:
         - Name: Thickness
           Type: BaseDataVariableType
           DataType: Size
-          Value: 2.0
+          Value: -1.0
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
@@ -7896,25 +7848,54 @@ Children:
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
-          Value: "#0fafff"
+          Value: "#1b5583"
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../Model/VariablesToLog/Total kW/LastValue"
+          Value: "../../Model/VariablesToLog/Average Current/LastValue"
           Children:
           - Name: Mode
             Type: BaseVariableType
             DataType: DynamicLinkMode
             ModellingRule: Optional
             Value: 2
-      - Name: Total kVA
+      - Name: Motor101_Current
         Type: TrendPen
         DataType: BaseDataType
         Children:
         - Name: Thickness
           Type: BaseDataVariableType
           DataType: Size
-          Value: 2.0
+          Value: -1.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Thresholds
+          Type: BaseObjectType
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ff7514"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Model/VariablesToLog/Motor101_Current/LastValue"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Motor102_Current
+        Type: TrendPen
+        DataType: BaseDataType
+        Children:
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: -1.0
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
@@ -7929,36 +7910,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../Model/VariablesToLog/Total kVA/LastValue"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
-      - Name: Total kVAR
-        Type: TrendPen
-        DataType: BaseDataType
-        Children:
-        - Name: Thickness
-          Type: BaseDataVariableType
-          DataType: Size
-          Value: 2.0
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: Thresholds
-          Type: BaseObjectType
-        - Name: Color
-          Type: BaseDataVariableType
-          DataType: Color
-          ModellingRule: Optional
-          Value: "#eb001b"
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../Model/VariablesToLog/Total kVAR/LastValue"
+          Value: "../../Model/VariablesToLog/Motor102_Current/LastValue"
           Children:
           - Name: Mode
             Type: BaseVariableType
