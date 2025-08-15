@@ -919,7 +919,7 @@ Children:
   - Name: IPAddress
     Type: BaseDataVariableType
     DataType: String
-    Value: "127.0.0.1"
+    Value: "0.0.0.0"
   - Name: Port
     Type: BaseDataVariableType
     DataType: UInt16

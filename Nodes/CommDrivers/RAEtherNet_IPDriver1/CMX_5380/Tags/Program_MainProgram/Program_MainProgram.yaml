@@ -3285,3 +3285,449 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         Value: "Program:MainProgram.PM1000_EnergyElectrical.PhaseRotation.@Description"
+- Name: E300_Motor101
+  Type: E300_SIM
+  DataType: E300_SIM
+  Children:
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Add On instruction to simulate an E300 operation"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.@Description"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.E300_Motor101.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.E300_Motor101.EnableOut.@Description"
+  - Name: E300_Motor_Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Motor_Start"
+  - Name: E300_Motor_Stop
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Motor_Stop"
+  - Name: E300_Motor_Run
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Motor_Run"
+  - Name: E300_Load
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Load"
+  - Name: E300_Simulate_OverloadTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_OverloadTrip"
+  - Name: E300_Simulate_PhaseLossTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_PhaseLossTrip"
+  - Name: E300_Simulate_GroundFaultCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_GroundFaultCurrentTrip"
+  - Name: E300_Simulate_StallTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_StallTrip"
+  - Name: E300_Simulate_JamTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_JamTrip"
+  - Name: E300_Simulate_UnderloadTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_UnderloadTrip"
+  - Name: E300_Simulate_CurrentImbalanceTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_CurrentImbalanceTrip"
+  - Name: E300_Simulate_L1UnderCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_L1UnderCurrentTrip"
+  - Name: E300_Simulate_L2UnderCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_L2UnderCurrentTrip"
+  - Name: E300_Simulate_L3UnderCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_L3UnderCurrentTrip"
+  - Name: E300_Simulate_L1OverCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_L1OverCurrentTrip"
+  - Name: E300_Simulate_L2OverCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_L2OverCurrentTrip"
+  - Name: E300_Simulate_L3OverCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_L3OverCurrentTrip"
+  - Name: E300_Simulate_L1LineLossTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_L1LineLossTrip"
+  - Name: E300_Simulate_L2LineLossTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_L2LineLossTrip"
+  - Name: E300_Simulate_L3LineLossTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.E300_Simulate_L3LineLossTrip"
+  - Name: Trip_Reset
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor101.Trip_Reset"
+- Name: E300_Motor102
+  Type: E300_SIM
+  DataType: E300_SIM
+  Children:
+  - Name: Description
+    Type: RAEtherNetIPMetaTag
+    DataType: String
+    Value: "Add On instruction to simulate an E300 operation"
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.@Description"
+  - Name: EnableIn
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.EnableIn"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Input - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.E300_Motor102.EnableIn.@Description"
+  - Name: EnableOut
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.EnableOut"
+    - Name: Description
+      Type: RAEtherNetIPMetaTag
+      DataType: String
+      Value: "Enable Output - System Defined Parameter"
+      Children:
+      - Name: SymbolName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Program:MainProgram.E300_Motor102.EnableOut.@Description"
+  - Name: E300_Motor_Start
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Motor_Start"
+  - Name: E300_Motor_Stop
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Motor_Stop"
+  - Name: E300_Motor_Run
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Motor_Run"
+  - Name: E300_Load
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Load"
+  - Name: E300_Simulate_OverloadTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_OverloadTrip"
+  - Name: E300_Simulate_PhaseLossTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_PhaseLossTrip"
+  - Name: E300_Simulate_GroundFaultCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_GroundFaultCurrentTrip"
+  - Name: E300_Simulate_StallTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_StallTrip"
+  - Name: E300_Simulate_JamTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_JamTrip"
+  - Name: E300_Simulate_UnderloadTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_UnderloadTrip"
+  - Name: E300_Simulate_CurrentImbalanceTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_CurrentImbalanceTrip"
+  - Name: E300_Simulate_L1UnderCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_L1UnderCurrentTrip"
+  - Name: E300_Simulate_L2UnderCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_L2UnderCurrentTrip"
+  - Name: E300_Simulate_L3UnderCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_L3UnderCurrentTrip"
+  - Name: E300_Simulate_L1OverCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_L1OverCurrentTrip"
+  - Name: E300_Simulate_L2OverCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_L2OverCurrentTrip"
+  - Name: E300_Simulate_L3OverCurrentTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_L3OverCurrentTrip"
+  - Name: E300_Simulate_L1LineLossTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_L1LineLossTrip"
+  - Name: E300_Simulate_L2LineLossTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_L2LineLossTrip"
+  - Name: E300_Simulate_L3LineLossTrip
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.E300_Simulate_L3LineLossTrip"
+  - Name: Trip_Reset
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Program:MainProgram.E300_Motor102.Trip_Reset"
+- Name: Motor101_Current
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Motor101_Current"
+- Name: Motor102_Current
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Motor102_Current"

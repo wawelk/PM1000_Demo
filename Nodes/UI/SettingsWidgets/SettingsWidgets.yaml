@@ -567,6 +567,9 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Item}@DisplayName"
+    - Class: Reference
+      Target: ns=5;i=480
+      Direction: Forward
   - Name: TimeZonesEnumeration
     Type: BaseObjectType
   - Name: DateTime

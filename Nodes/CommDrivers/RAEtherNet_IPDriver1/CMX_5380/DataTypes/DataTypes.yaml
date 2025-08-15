@@ -845,6 +845,142 @@ Children:
     DisplayName: {"LocaleId":"","Text":"Default Binary"}
     ReferenceType: HasEncoding
 - Class: DataType
+  Name: E300_SIM
+  Id: g=8cdc35e4df88fa622a8e75f47aae21e6
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "E300_SIM",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8cdc35e4df88fa622a8e75f47aae21e6",
+     "Namespace": 18
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Motor_Start",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Motor_Stop",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Motor_Run",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Load",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "E300_Simulate_OverloadTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_PhaseLossTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_GroundFaultCurrentTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_StallTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_JamTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_UnderloadTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_CurrentImbalanceTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_L1UnderCurrentTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_L2UnderCurrentTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_L3UnderCurrentTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_L1OverCurrentTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_L2OverCurrentTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_L3OverCurrentTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_L1LineLossTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_L2LineLossTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "E300_Simulate_L3LineLossTrip",
+      "DataType": {
+       "Id": 1
+      }
+     },{
+      "Name": "Trip_Reset",
+      "DataType": {
+       "Id": 1
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"E300_SIM"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
   Name: raC_UDT_Event
   Id: g=5ff869115aaf1c1bb2b98b3ac55613ea
   Supertype: Structure

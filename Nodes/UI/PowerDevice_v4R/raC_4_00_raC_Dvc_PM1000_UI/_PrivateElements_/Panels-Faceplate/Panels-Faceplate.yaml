@@ -6410,6 +6410,17 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 3
+  - Name: Tag
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{raSDK1_DialogBox}/Ref_Tag@NodeId"
 - Name: raC_4_00_raC_Dvc_PM1000_VIF
   Id: g=8bbde8f1ae1948bc50a9e53206faa3b8
   Supertype: raSDK1_PanelBase
@@ -9268,6 +9279,17 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 3
+  - Name: Tag
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{raSDK1_DialogBox}/Ref_Tag@NodeId"
 - Name: raC_4_00_raC_Dvc_PM1000_PA
   Id: g=65cf49b642ad2472033472a27b461444
   Supertype: raSDK1_PanelBase
@@ -12379,6 +12401,17 @@ Children:
     DataType: VerticalAlignment
     ModellingRule: Optional
     Value: 3
+  - Name: Tag
+    Type: Alias
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{raSDK1_DialogBox}/Ref_Tag@NodeId"
 - Name: raC_4_00_raC_Dvc_PM1000_Fault
   Id: g=2d1e0afe2cb24e565e3486ca8b92e1d5
   Supertype: Panel
