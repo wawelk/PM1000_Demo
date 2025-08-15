@@ -1092,7 +1092,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/PM1000_Demo/UI/Screens/Real_Time_Data"
+          Value: "/Objects/PM1000_Demo/UI/Screens/Motors"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1107,7 +1107,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/PM1000_Demo/UI/Screens/Logix_AOP"
+          Value: "/Objects/PM1000_Demo/UI/Screens/Real_Time_Data"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1122,7 +1122,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/PM1000_Demo/UI/Screens/Device_Library"
+          Value: "/Objects/PM1000_Demo/UI/Screens/Logix_AOP"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1137,7 +1137,7 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/PM1000_Demo/UI/Screens/InfluxDB"
+          Value: "/Objects/PM1000_Demo/UI/Screens/Device_Library"
           Children:
           - Name: Kind
             Type: PropertyType
@@ -1152,13 +1152,28 @@ Children:
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/PM1000_Demo/UI/Screens/PM1000"
+          Value: "/Objects/PM1000_Demo/UI/Screens/InfluxDB"
           Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
             Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
       - Name: Panel7
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/PM1000_Demo/UI/Screens/PM1000"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel8
         Type: NavigationPanelItem
         Children:
         - Name: Title

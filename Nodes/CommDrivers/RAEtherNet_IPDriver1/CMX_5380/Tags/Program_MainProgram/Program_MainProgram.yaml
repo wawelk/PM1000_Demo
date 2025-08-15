@@ -3333,6 +3333,7 @@ Children:
         DataType: String
         Value: "Program:MainProgram.E300_Motor101.EnableOut.@Description"
   - Name: E300_Motor_Start
+    Id: g=32db8ffbec0f60db577595052c1f1e8c
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
@@ -3341,6 +3342,7 @@ Children:
       DataType: String
       Value: "Program:MainProgram.E300_Motor101.E300_Motor_Start"
   - Name: E300_Motor_Stop
+    Id: g=9af2605a3963c3eaf7ed6479a6332d16
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
@@ -3548,6 +3550,7 @@ Children:
         DataType: String
         Value: "Program:MainProgram.E300_Motor102.EnableOut.@Description"
   - Name: E300_Motor_Start
+    Id: g=f10b19925b78378be3ac1e58d8f699b3
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:
@@ -3556,6 +3559,7 @@ Children:
       DataType: String
       Value: "Program:MainProgram.E300_Motor102.E300_Motor_Start"
   - Name: E300_Motor_Stop
+    Id: g=0fb2c35ee806638164c374312e87d11f
     Type: RAEtherNetIPTag
     DataType: Boolean
     Children:

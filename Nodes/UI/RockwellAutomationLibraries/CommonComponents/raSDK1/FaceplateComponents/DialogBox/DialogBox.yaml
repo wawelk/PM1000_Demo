@@ -211,7 +211,6 @@ Children:
           DataType: Color
           Value: "#afafaf"
         - Name: MoveTarget
-          Id: g=1bf187d6d555dd8c335799d087e8f16e
           Type: NodePointer
           DataType: NodeId
           Children:
@@ -307,7 +306,6 @@ Children:
     Target: ns=5;i=519
     Direction: Forward
   - Name: MoveTarget
-    Id: g=96f5c4ea4b9a05ca5a513afa5fa46d54
     Type: NodePointer
     DataType: NodeId
   - Name: Modal
@@ -454,7 +452,6 @@ Children:
           DataType: Color
           Value: "#afafaf"
         - Name: MoveTarget
-          Id: g=ee43fe0157c1915b7d22d1f650a05252
           Type: NodePointer
           DataType: NodeId
           Children:
@@ -1327,7 +1324,6 @@ Children:
           DataType: Color
           Value: "#afafaf"
         - Name: MoveTarget
-          Id: g=0e09de5854f6cba1c36234c0a85eccf2
           Type: NodePointer
           DataType: NodeId
           Children:
