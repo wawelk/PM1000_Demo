@@ -138,10 +138,10 @@ Project:
    Module: FTOptix.InfluxDBStoreRemote.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 11433
+  TotalNodeCount: 11434
   Objects: 1935
   ObjectTypes: 48
-  Variables: 9421
+  Variables: 9422
   VariableTypes: 9
   DataTypes: 9
   Methods: 11

@@ -1040,6 +1040,12 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt32
     Value: 1
+  - Name: AllowedRemoteSources
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["http://192.168.254.64/"]
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
